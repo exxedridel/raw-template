@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "../assets/logo.svg";
+import "../styles/LearnReact.css";
 
-function App() {
+const LearnReact = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +20,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
-export default App;
+export default LearnReact;

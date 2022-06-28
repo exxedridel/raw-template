@@ -1,0 +1,9 @@
+.nav-btn {
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .nav-btn {
+    width: 100%;
+  }
+}

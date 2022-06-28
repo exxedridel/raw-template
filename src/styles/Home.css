@@ -1,0 +1,18 @@
+.bg--secondary {
+   padding: 4rem 0;
+}
+
+.heading-block {
+   padding-bottom: 23.7px;
+}
+
+.webdev-img, .responsive-img {
+   width: 68%;
+   padding-bottom: 2.5rem;
+}
+
+.center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
