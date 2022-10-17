@@ -1,18 +1,18 @@
+.first-container {
+  padding-bottom: 60px;
+}
+
 .bg--secondary {
-   padding: 4rem 0;
+  padding-top: 0;
+  padding-bottom: 70px;                                                                                              
 }
 
 .heading-block {
-   padding-bottom: 23.7px;
+  padding-bottom: 17.8286px;
 }
 
-.webdev-img, .responsive-img {
-   width: 68%;
-   padding-bottom: 2.5rem;
-}
-
-.center {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.webdev-img,
+.responsive-img {
+  width: 70%;
+  padding-bottom: 50px;
 }

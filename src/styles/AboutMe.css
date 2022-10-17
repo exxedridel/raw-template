@@ -1,0 +1,22 @@
+.contacts {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 40px;
+   margin: 40px 20px;
+}
+
+.card-list {
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 20px;
+   overflow-x: auto;
+   margin: 40px 0;
+   background-color: rgb(250, 250, 250);
+   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.center > h1 {
+   padding: 20px 0 0;
+}
+

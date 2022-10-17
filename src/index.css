@@ -12,11 +12,16 @@ code {
     monospace;
 }
 
-h1, h2, h3 {
-  font-weight: normal;
+section {
+  padding: 20px;
 }
 
-h5 {
-  padding-top: 14px;
-  font-size: 18px;
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

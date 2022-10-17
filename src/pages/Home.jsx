@@ -22,52 +22,50 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-6 col-md-6 center">
-            {" "}
-            <img alt="Image" className="webdev-img" src={ImageWww} />{" "}
-          </div>
-          <div class="col-lg-5 col-md-6">
-            <div class="heading-block">
-              <h2>Web App Development</h2>
+      <section className="feature-large switchable bg--secondary">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-6 col-md-6 center">
+              {" "}
+              <img alt="Image" className="webdev-img" src={ImageWww} />{" "}
             </div>
-            <div class="text-block">
-              <h5>Expertise</h5>
-              <p>
-                {" "}
-                We understand the nuances of building successful SaaS web stack
-                such as multi - tenancy, feature flags, i18n / l10n, role -
-                based access, security compliance, and more.&nbsp;
-              </p>
-            </div>
-            <div class="text-block">
-              <h5>Approach</h5>
-              <p>
-                {" "}
-                We focus on establishing an effective team and processes to
-                develop a sustainable product.{" "}
-              </p>
+            <div className="col-lg-5 col-md-6">
+              <div className="heading-block">
+                <h2>Web App Development</h2>
+              </div>
+              <div className="text-block">
+                <h5>Expertise</h5>
+                <p>
+                  {" "}
+                  We understand the nuances of building successful SaaS web
+                  stack such as multi - tenancy, feature flags, i18n / l10n,
+                  role - based access, security compliance, and more.&nbsp;
+                </p>
+              </div>
+              <div className="text-block">
+                <h5>Approach</h5>
+                <p>
+                  {" "}
+                  We focus on establishing an effective team and processes to
+                  develop a sustainable product.{" "}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section class="feature-large switchable switchable--switch bg--secondary">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-lg-6 col-md-6 center">
+      </section>
+      <section className="feature-large switchable switchable--switch bg--secondary">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img
-                alt="Image"
-                class="responsive-img"
-                src={ImageResponsive}
-              />{" "}
+              <img alt="Image" className="responsive-img" src={ImageResponsive} />{" "}
             </div>
-            <div class="col-lg-5 col-md-6">
-              <div class="heading-block">
+            <div className="col-lg-5 col-md-6">
+              <div className="heading-block">
                 <h2>Agile Dev Teams</h2>
               </div>
-              <div class="text-block">
+              <div className="text-block">
                 <h5>Full range of skillsets</h5>
                 <p>
                   {" "}
@@ -77,7 +75,7 @@ const Home = () => {
                   needs.{" "}
                 </p>
               </div>
-              <div class="text-block">
+              <div className="text-block">
                 <h5>Mature processes</h5>
                 <p>
                   {" "}

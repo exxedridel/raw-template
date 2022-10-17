@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import AboutMe from "./pages/AboutMe";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="services" element={<Services />} />
+        <Route path="about-me" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
