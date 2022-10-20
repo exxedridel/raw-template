@@ -15,20 +15,28 @@ const GIPHY_API_KEY = "FpimVNooJI0i8Fk99twHUkJcqNtjgSpd";
 const Services = () => {
   const [catFact, setCatFact] = useState("");
   const [catGif, setCatGif] = useState("");
+  const [isClicked, setIsCliked] = useState(false);
 
   useEffect(() => {
-    async function getStates() {
+    const getStates = async () => {
       const resFact = await fetch("https://catfact.ninja/fact");
       const jsonFact = await resFact.json();
       setCatFact(jsonFact.fact);
       const threeWordsArr = jsonFact.fact.split(" ", 3).join(" ");
 
-      const resGif = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWordsArr}`)
-      const jsonGif = await resGif.json()
-      setCatGif(jsonGif.data[0].images.original.url)
-    }
+      const resGif = await fetch(
+        `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWordsArr}`
+      );
+      const jsonGif = await resGif.json();
+      setCatGif(jsonGif.data[0].images.original.url);
+    };
     getStates().catch(console.error);
-  }, []);
+  }, [isClicked]);
+
+  function handleClick () {
+    setIsCliked(isClicked ? false : true)
+    console.log(isClicked)
+  }
 
   // useEffect(() => {
   //   fetch("https://catfact.ninja/fact")
@@ -52,9 +60,10 @@ const Services = () => {
       <Navbar />
       <LearnReact />
       <div className="component">
-        <img src={catGif} alt="gif" />
+        <img className="img-gif" src={catGif} alt="gif" />
         <h1>{catFact}</h1>
       </div>
+      <button onClick={handleClick} className="btn btn-random-fact">Random Fact</button>
     </div>
   );
 };

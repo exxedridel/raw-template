@@ -1,11 +1,17 @@
 .component {
-   display: flex;
-   align-items: center;
-   gap: 20px;
- }
- 
- img  {
-   width: 150px;
-   height: 150px;
-   object-fit: cover;
- }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-gif {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.btn-random-fact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
