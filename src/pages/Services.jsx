@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import LearnReact from "../components/LearnReact";
 import Navbar from "../components/Navbar";
 import "../styles/Services.css";
@@ -18,26 +19,54 @@ const Services = () => {
   const [isClicked, setIsCliked] = useState(false);
 
   useEffect(() => {
-    const getStates = async () => {
-      const resFact = await fetch("https://catfact.ninja/fact");
-      const jsonFact = await resFact.json();
-      setCatFact(jsonFact.fact);
-      const threeWordsArr = jsonFact.fact.split(" ", 3).join(" ");
-
-      const resGif = await fetch(
-        `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWordsArr}`
-      );
-      const jsonGif = await resGif.json();
-      setCatGif(jsonGif.data[0].images.original.url);
+    // with axios
+    const getStates = () => { 
+      axios.get("https://catfact.ninja/fact")
+      .then((res) => {setCatFact(res.data.fact);
+        const threeWords = res.data.fact.split(" ", 3).join(" ");
+        axios.get(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWords}`)
+          .then((res) => {setCatGif(res.data.data[0].images.original.url)})
+          .catch(function (error) {console.log(error)});
+      });
     };
-    getStates().catch(console.error);
+    getStates(); // since catch does not work here this function could be omitted if not using to types
+
+    // with axios and async
+    // const getStates = async () => {
+    //   const resFacts = await axios("https://catfact.ninja/fact")
+    //   const dataFact = await resFacts.data.fact
+    //   setCatFact(dataFact)
+
+    //   const threeWords = dataFact.split(" ", 3).join(" ");
+    //   console.log(threeWords)
+    //   const resGiphy = await axios(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWords}`)
+    //   const dataGif = await resGiphy.data.data[0].images.original.url
+    //   setCatGif(dataGif)
+    // }
+    // getStates().catch(console.error);
+
+    // with async 
+    // const getStates = async () => {
+    //   const resFact = await fetch("https://catfact.ninja/fact");
+    //   const jsonFact = await resFact.json();
+    //   setCatFact(jsonFact.fact);
+    //   const threeWordsArr = jsonFact.fact.split(" ", 3).join(" ");
+
+    //   const resGif = await fetch(
+    //     `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${threeWordsArr}`
+    //   );
+    //   const jsonGif = await resGif.json();
+    //   setCatGif(jsonGif.data[0].images.original.url);
+    // };
+    // getStates().catch(console.error);
   }, [isClicked]);
 
-  function handleClick () {
-    setIsCliked(isClicked ? false : true)
-    console.log(isClicked)
+  function handleClick() {
+    setIsCliked(isClicked ? false : true);
+    console.log(isClicked);
   }
 
+  // with fetchs concatenated
   // useEffect(() => {
   //   fetch("https://catfact.ninja/fact")
   //     .then((res) => res.json())
@@ -63,7 +92,9 @@ const Services = () => {
         <img className="img-gif" src={catGif} alt="gif" />
         <h1>{catFact}</h1>
       </div>
-      <button onClick={handleClick} className="btn btn-random-fact">Random Fact</button>
+      <button onClick={handleClick} className="btn btn-random-fact">
+        Random Fact
+      </button>
     </div>
   );
 };
