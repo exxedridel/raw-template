@@ -9,7 +9,7 @@ const HeaderBanner = () => {
       />
       <div className="overlap-text">
         <p>
-          We make your <b>vision</b>
+          We bring your <b>ideas</b>
         </p>
         <p>
           come to <b>life</b>

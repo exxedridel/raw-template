@@ -4,7 +4,7 @@
 
 .bg--secondary {
   padding-top: 0;
-  padding-bottom: 70px;                                                                                              
+  padding-bottom: 70px;
 }
 
 .heading-block {
@@ -13,6 +13,20 @@
 
 .webdev-img,
 .responsive-img {
-  width: 70%;
-  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .webdev-img,
+  .responsive-img {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .webdev-img,
+  .responsive-img {
+    width: 80%;
+  }
 }

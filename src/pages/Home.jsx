@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import HeaderBanner from "../components/HeaderBanner";
-import ImageWww from "../assets/www.png";
-import ImageResponsive from "../assets/responsive.png";
+import webappDev from "../assets/webapp-development.png";
+import agileTeams from "../assets/agile-teams.svg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="www siht" className="webdev-img" src={ImageWww} />{" "}
+              <img alt="webapp development" className="webdev-img" src={webappDev} />{" "}
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
@@ -59,28 +59,26 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="responvide siht" className="responsive-img" src={ImageResponsive} />{" "}
+              <img alt="Agile Dev Teams" className="responsive-img" src={agileTeams} />{" "}
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
-                <h2>Agile Dev Teams</h2>
+                <h2>Agile Developing Teams</h2>
               </div>
               <div className="text-block">
                 <h5>Full range of skillsets</h5>
                 <p>
-                  {" "}
                   Building a successful product requires a range of skillsets
                   and specializations. Our Agile Teams are the simplest way to
                   bootstrap, scale and sustain any Web App / SaaS development
-                  needs.{" "}
+                  needs.
                 </p>
               </div>
               <div className="text-block">
                 <h5>Mature processes</h5>
                 <p>
-                  {" "}
                   You leverage not only our mature processes but decades of
-                  experience building such products at scale.{" "}
+                  experience building such products at scale.
                 </p>
               </div>
             </div>

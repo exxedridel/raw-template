@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../styles/Navbar.css"
 
 const Navbar = () => {
@@ -5,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          Web<b>Logo</b>
+          Set<b>apps</b>
         </a>
         <button
           className="navbar-toggler"
@@ -38,9 +39,9 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="services">
+                  <Link to="services" className="dropdown-item">
                     Action
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/">
@@ -58,9 +59,9 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="about-me">
-                About me
-              </a>
+              <Link to="about-us" className="nav-link" >
+                About
+              </Link>
             </li>
           </ul>
           <button className="btn btn-outline-primary nav-btn" type="submit">
