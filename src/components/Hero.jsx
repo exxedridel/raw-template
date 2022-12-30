@@ -7,6 +7,7 @@ const Hero = () => {
       <img
         src="https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         className="hero--photo"
+        alt="person looking at stars"
       />
       <h1 className="hero--header">About Us</h1>
       <p className="hero--text">

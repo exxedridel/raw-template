@@ -27,7 +27,7 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="Image" className="webdev-img" src={ImageWww} />{" "}
+              <img alt="www siht" className="webdev-img" src={ImageWww} />{" "}
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
@@ -59,7 +59,7 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="Image" className="responsive-img" src={ImageResponsive} />{" "}
+              <img alt="responvide siht" className="responsive-img" src={ImageResponsive} />{" "}
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">

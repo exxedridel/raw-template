@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     id: 1,
     title: "Life Lessons with Katie Zaferes",
@@ -44,14 +44,17 @@ export default [
   {
     id: 4,
     title: "Learn Wedding Photography",
-    description: "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
+    description:
+      "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
     price: 125,
     coverImg: "www.png",
     stats: {
-        rating: "5.0",
-        reviewCount: 30
+      rating: "5.0",
+      reviewCount: 30,
     },
     location: "Online",
     openSpots: 27,
-},
+  },
 ];
+
+export default data;

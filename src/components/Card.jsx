@@ -25,12 +25,12 @@ const Card = (props) => {
   return (
     <div className="cardi">
       {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img src={`../images/${props.data.coverImg}`} className="card--image" />
+      <img src={`../images/${props.data.coverImg}`} className="card--image" alt="card"/>
       {/* given name doesnt matter | you can change it here but be carefull to call it correctly */}
       <div className="card--stats">
         <img
           src="https://cdn-icons.flaticon.com/png/128/4369/premium/4369505.png?token=exp=1656623882~hmac=1ae6bf564e87178c73efe4ab04070a62"
-          className="card--star"
+          className="card--star" alt="star"
         />
         <span>{props.data.stats.rating}</span>
         <span className="gray">({props.data.stats.reviewCount}) •&nbsp;</span>
