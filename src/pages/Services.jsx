@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import LearnReact from "../components/LearnReact";
 import Navbar from "../components/Navbar";
 import "../styles/Services.css";
 
@@ -87,7 +86,6 @@ const Services = () => {
   return (
     <div>
       <Navbar />
-      <LearnReact />
       <div className="component">
         <img className="img-gif" src={catGif} alt="gif" />
         <h1>{catFact}</h1>

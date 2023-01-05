@@ -45,9 +45,8 @@ const Home = () => {
               <div className="text-block">
                 <h5>Approach</h5>
                 <p>
-                  {" "}
                   We focus on establishing an effective team and processes to
-                  develop a sustainable product.{" "}
+                  develop a sustainable product.
                 </p>
               </div>
             </div>
@@ -59,7 +58,7 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="Agile Dev Teams" className="responsive-img" src={agileTeams} />{" "}
+              <img alt="Agile Dev Teams" className="responsive-img" src={agileTeams} />
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
