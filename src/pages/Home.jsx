@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import HeaderBanner from "../components/HeaderBanner";
 import webappDev from "../assets/webapp-development.png";
 import agileTeams from "../assets/agile-teams.svg";
@@ -7,7 +6,6 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <HeaderBanner />
       <section className="text-center bg--secondary">
         <div className="container">
@@ -27,7 +25,11 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="webapp development" className="webdev-img" src={webappDev} />{" "}
+              <img
+                alt="webapp development"
+                className="webdev-img"
+                src={webappDev}
+              />{" "}
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
@@ -58,7 +60,11 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
               {" "}
-              <img alt="Agile Dev Teams" className="responsive-img" src={agileTeams} />
+              <img
+                alt="Agile Dev Teams"
+                className="responsive-img"
+                src={agileTeams}
+              />
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">

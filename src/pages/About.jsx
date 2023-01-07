@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Card from "../components/Card";
 import "../styles/AboutMe.css";
@@ -18,11 +17,8 @@ const AboutMe = () => {
   });
   return (
     <div>
-      <Navbar />
       <Hero />
-      <section className="card-list">
-        {Cards}
-      </section>
+      <section className="card-list">{Cards}</section>
       <div className="center">
         <h1>Contact</h1>
       </div>
