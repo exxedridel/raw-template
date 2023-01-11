@@ -71,3 +71,15 @@
      left: 5%;
    }
  }
+
+ @media (min-width: 1300px) {
+  .first-container {
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    margin-inline: auto;
+    max-width: 90rem;
+  }
+  .first-container img {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.75);
+  }
+ }
