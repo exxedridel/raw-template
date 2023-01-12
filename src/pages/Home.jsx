@@ -9,11 +9,11 @@ const Home = () => {
       <HeaderBanner />
       <section className="text-center bg--secondary">
         <div className="container">
-          <div className="row">
+          <div id="main-content" className="row main-title">
             <div className="heading-block">
               <h1>Our Services</h1>
             </div>
-            <p>
+            <p className="lead">
               We are a SaaS product development company. With us, you leverage
               our expertise to build world class products.
             </p>
@@ -24,12 +24,11 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
-              {" "}
               <img
                 alt="webapp development"
                 className="webdev-img"
                 src={webappDev}
-              />{" "}
+              />
             </div>
             <div className="col-lg-5 col-md-6">
               <div className="heading-block">
@@ -38,7 +37,6 @@ const Home = () => {
               <div className="text-block">
                 <h5>Expertise</h5>
                 <p>
-                  {" "}
                   We understand the nuances of building successful SaaS web
                   stack such as multi - tenancy, feature flags, i18n / l10n,
                   role - based access, security compliance, and more.&nbsp;
@@ -59,7 +57,6 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-6 col-md-6 center">
-              {" "}
               <img
                 alt="Agile Dev Teams"
                 className="responsive-img"

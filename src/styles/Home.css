@@ -7,8 +7,13 @@
   padding-bottom: 70px;
 }
 
+.main-title {
+  margin-inline: auto;
+  max-width: 600px;
+}
+
 .heading-block {
-  padding-bottom: 17.8286px;
+  padding-block: 20px;
 }
 
 .webdev-img,

@@ -1,5 +1,15 @@
+a.nav-link,
+.nav-btn {
+  font-size: 14px;
+}
+
 .nav-btn {
   width: auto;
+}
+
+.nav-cont {
+  margin-inline: auto;
+  max-width: 70rem;
 }
 
 @media (max-width: 992px) {

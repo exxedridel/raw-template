@@ -9,11 +9,26 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
 }
 
 section {
   padding: 20px;
+}
+
+h5 {
+  color: rgb(119, 82, 168);
+}
+
+.lead {
+  font-size: 17.3714px;
+  font-weight: 500;
+  color: rgb(124, 124, 124);
+}
+@media (min-width: 1025px) {
+  .lead {
+    font-size: 19px;
+  }
 }
 
 .bold {

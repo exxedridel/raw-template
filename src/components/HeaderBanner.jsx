@@ -1,6 +1,11 @@
 import "../styles/HeaderBanner.css";
 
 const HeaderBanner = () => {
+  function scrollToContent() {
+    const element = document.getElementById("main-content");
+    element.scrollIntoView();
+  }
+
   return (
     <div className="first-container">
       <img
@@ -10,10 +15,15 @@ const HeaderBanner = () => {
       <div className="overlap-text">
         <p>
           We bring your <b>ideas</b>
-        </p>
-        <p>
+          <br />
           come to <b>life</b>
         </p>
+        <button
+          className="btn btn-light"
+          onClick={scrollToContent}
+        >
+          LEARN MORE
+        </button>
       </div>
     </div>
   );

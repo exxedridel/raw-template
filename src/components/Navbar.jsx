@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom"
-import "../styles/Navbar.css"
+import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
-      <div className="container-fluid">
+      <div className="container-fluid nav-cont">
         <a className="navbar-brand" href="/">
-          Set<b>apps</b>
+          Set<b>Apps</b>
         </a>
         <button
           className="navbar-toggler"
@@ -23,7 +23,7 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
-                Home
+                HOME
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -35,7 +35,7 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Services
+                SERVICES
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -59,14 +59,16 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link to="about" className="nav-link" >
-                About
+              <Link to="about" className="nav-link">
+                ABOUT
               </Link>
             </li>
           </ul>
-          <button className="btn btn-outline-primary nav-btn" type="submit">
-            Let's connect
-          </button>
+          <a href="https://wa.me/message/QNWKISFC6MBJI1">
+            <button className="btn btn-primary nav-btn" type="submit">
+              LET'S CONNECT
+            </button>
+          </a>
         </div>
       </div>
     </nav>

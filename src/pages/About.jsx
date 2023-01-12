@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Card from "../components/Card";
-import "../styles/AboutMe.css";
+import "../styles/About.css";
 import dataCard from "../dataCard.js";
 
 const AboutMe = () => {
