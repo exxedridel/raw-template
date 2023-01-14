@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
+import logo from "../assets/setapps-logo.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid nav-cont">
         <a className="navbar-brand" href="/">
-          Set<b>Apps</b>
+          <img className="logo" src={logo} alt="setapps logo" />
+          et<b>apps</b>
         </a>
         <button
           className="navbar-toggler"
