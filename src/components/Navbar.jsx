@@ -41,13 +41,13 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link to="services" className="dropdown-item">
-                    Action
+                  <Link to="services1" className="dropdown-item">
+                    Webapp Calculator
                   </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/">
-                    Another action
+                    SGV Logo creation
                   </a>
                 </li>
                 <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="/">
-                    Something else here
+                    Improve performance
                   </a>
                 </li>
               </ul>

@@ -1,4 +1,5 @@
 import "../styles/HeaderBanner.css";
+import nightStarsLand from "../assets/night-stars-landscape1.jpg"
 
 const HeaderBanner = () => {
   function scrollToContent() {
@@ -9,7 +10,7 @@ const HeaderBanner = () => {
   return (
     <div className="first-container">
       <img
-        src="https://images.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg"
+        src={nightStarsLand}
         alt="main-img-bg"
       />
       <div className="overlap-text">
