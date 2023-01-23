@@ -1,10 +1,11 @@
 .logo {
-  width: 31px;
+  width: 26px;
+  margin-right: 4px;
 }
 
 a.nav-link,
 .nav-btn {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .nav-btn {

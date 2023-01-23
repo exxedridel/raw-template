@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container-fluid nav-cont">
         <a className="navbar-brand" href="/">
           <img className="logo" src={logo} alt="setapps logo" />
-          et<b>apps</b>
+          Set<b>apps</b>
         </a>
         <button
           className="navbar-toggler"
@@ -22,7 +22,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 bold">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
                 HOME
@@ -42,12 +42,12 @@ const Navbar = () => {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <Link to="services1" className="dropdown-item">
-                    Webapp Calculator
+                    Webapp calculator
                   </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/">
-                    SGV Logo creation
+                    Logo-svg creation
                   </a>
                 </li>
                 <li>
