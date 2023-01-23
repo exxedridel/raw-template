@@ -4,7 +4,7 @@ import logo from "../assets/setapps-logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-light box-shadow">
       <div className="container-fluid nav-cont">
         <a className="navbar-brand" href="/">
           <img className="logo" src={logo} alt="setapps logo" />
