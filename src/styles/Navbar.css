@@ -3,6 +3,15 @@
   margin-right: 4px;
 }
 
+a.navbar-brand {
+  padding-right: 25px;
+}
+@media (min-width: 992px) {
+  a.navbar-brand {
+    border-right: 1px solid rgba(128, 128, 128, 0.363);
+  }
+}
+
 a.nav-link,
 .nav-btn {
   font-size: 15px;
@@ -10,6 +19,8 @@ a.nav-link,
 
 .nav-btn {
   width: auto;
+  background: #2374ab;
+  border-color: #2374ab;
 }
 
 .nav-cont {
